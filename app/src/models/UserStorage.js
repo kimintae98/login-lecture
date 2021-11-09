@@ -13,7 +13,7 @@ class UserStorage {
         });
     }
 
-    static  async save(userInfo) {
+    static async save(userInfo) {
         return new Promise((resolve, reject) => {
             const query = "INSERT INTO users(id, name, psword) VALUES(?, ?, ?);";
             db.query(query, 
